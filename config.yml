@@ -1,0 +1,16 @@
+title: KLEE runs on Ubuntu 18.04
+description: It failed to generate TC by KLEE when execute 32 bit bc file on Ubuntu 18.04
+template:
+  repo: klee-runs-on-ubuntu-18.04-template
+  name: klee-runs-on-ubuntu-18.04
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
